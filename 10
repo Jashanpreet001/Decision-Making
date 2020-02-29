@@ -1,0 +1,30 @@
+//
+//  main.c
+//  C++ Programming at VMM.
+// WAP to accept a number between 1-10 from user to rate things.
+//  Created by JASHANPREET SINGH on 29/02/20.
+//  Copyright © 2020 JASHANPREET SINGH. All rights reserved.
+//
+
+#include <stdio.h>
+
+int main(){
+    int num;
+    
+    printf("Enter your rating b/w 1-10\n");
+    scanf("%d",&num);
+    
+    if(num>=1 && num<=5)
+        printf("average/n");
+    else if(num>=6 && num<=7)
+        printf("good/n");
+    else if(num>=8 && num<=9)
+        printf("very good/n");
+    else if(num==10)
+        printf("excellent/n");
+    else
+        printf("You have enter an invalid rating");
+    
+    
+    return 0;
+    }
