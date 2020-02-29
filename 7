@@ -1,0 +1,74 @@
+//
+//  main.c
+//  C++ Programming at VMM.
+// WAP to accept number between 1-7 from user and print the day of the week accordingly.
+//  Created by JASHANPREET SINGH on 29/02/20.
+//  Copyright © 2020 JASHANPREET SINGH. All rights reserved.
+//
+
+#include <stdio.h>
+
+/*int main(){
+    
+    int num;
+    
+    printf("Enter the day's number of the week\n");
+    scanf("%d",&num);
+    
+    if(num==1)
+        printf("The day is Monday\n");
+    else if(num==2)
+        printf("The day is Tuesday\n");
+    else if(num==3)
+        printf("The day is wednesday\n");
+    else if(num==4)
+        printf("The day is Thursday\n");
+    else if(num==5)
+        printf("The day is Friday\n");
+    else if(num==6)
+        printf("The day is Saturday\n");
+    else if(num==7)
+        printf("The day is Sunday\n");
+    else
+        printf("Invalid number: There are only seven days in a week");
+    
+    return 0;
+    
+}*/
+
+int main(){
+    int num;
+   printf("Enter the day's number of the week\n");
+    scanf("%d",&num);
+    switch(num)
+    
+    {case 1:
+            printf("The day is Monday\n");
+            break;
+        case 2:
+            printf("The day is Tuesday\n");
+            break;
+        case 3:
+            printf("The day is wednesday\n");
+            break;
+        case 4:
+            printf("The day is Thursday\n");
+            break;
+        case 5:
+            printf("The day is friday\n");
+            break;
+        case 6:
+            printf("The day is saturday\n");
+            break;
+        case 7:
+            printf("The day is Sunday\n");
+            break;
+        default:
+            printf("Invalid number: There are only seven days in a week");
+            break;
+     }
+    
+    return 0;
+}
+
+
