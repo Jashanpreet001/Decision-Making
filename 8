@@ -1,0 +1,36 @@
+//
+//  main.c
+//  C++ Programming at VMM.
+// WAP to accept character from user and check whether it is vowel or consonants.
+//  Created by JASHANPREET SINGH on 29/02/20.
+//  Copyright © 2020 JASHANPREET SINGH. All rights reserved.
+//
+
+#include <stdio.h>
+
+int main(){
+    char character;
+    
+    printf("Enter your character\n");
+    scanf("%c",&character);
+    
+    switch(character)
+    {
+        case'a':
+        case'e':
+        case'i':
+        case'o':
+        case'u':
+        case'A':
+        case'E':
+        case'I':
+        case'O':
+        case'U':
+            printf("The character is a vowel\n");
+            break;
+        default:
+            printf("The character is not a vowel\n");
+            }
+    
+    return 0;
+    }
