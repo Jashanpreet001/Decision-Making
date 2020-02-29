@@ -1,0 +1,29 @@
+//
+//  main.c
+//  C++ Programming at VMM.
+// WAP to accept a character from user and check whether it is upper case alphabet, lower case alphabet, a digit or any other character
+//  Created by JASHANPREET SINGH on 29/02/20.
+//  Copyright © 2020 JASHANPREET SINGH. All rights reserved.
+//
+
+#include <stdio.h>
+
+int main(){
+    
+    char character;
+    
+    printf("Enter your character\n");
+    scanf("%c",&character);
+    
+    if(character>=65 && character<=90)
+        {printf("your character is an upper-case character\n");}
+    else if(character>=97 && character<=122)
+    {printf("your character is an lower-case character\n");}
+    else if(character>=48 && character<=59)
+        {printf("your character is a digit character\n");}
+    else
+        {printf("your character is any other character\n");}
+    
+    return 0;
+    
+}
