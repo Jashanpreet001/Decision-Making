@@ -1,0 +1,36 @@
+//
+//  main.c
+//  C++ Programming at VMM.
+// WAP to accept the number of calls from customer of a mobile company and calculate the bill accordingly.
+//  Created by JASHANPREET SINGH on 29/02/20.
+//  Copyright © 2020 JASHANPREET SINGH. All rights reserved.
+//
+
+#include <stdio.h>
+
+
+int main(){
+    
+    unsigned int calls,number_of_months;
+    float bill;
+    bill=0;
+    
+    printf("Enter the total calls made and nnumber of months\n");
+    scanf("%d%d",&calls,&number_of_months);
+    bill=0;
+    number_of_months=0;
+    { if(calls<=100)
+        bill=(0+(99*number_of_months));
+    else if(calls>100 && calls<=200)
+   bill=(0.40*(calls-100)+(99*number_of_months));
+    else if(calls>20+0 && calls<=300)
+    bill=(0.40*100+0.80*(calls-200)+(99*number_of_months));
+    else if(calls>300)
+    bill=(0.40*100+0.80*100+1.20*(calls-300)+(99*number_of_months));
+    }
+
+    printf("%f",bill);
+
+
+
+return 0;}
