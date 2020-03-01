@@ -1,0 +1,54 @@
+//
+//  main.c
+//  C++ Programming at VMM.
+// WAP to accept coefficients of quadratic equation from the user and calculate it roots accordingly.
+//  Created by JASHANPREET SINGH on 29/02/20.
+//  Copyright © 2020 JASHANPREET SINGH. All rights reserved.
+//
+
+#include <stdio.h>
+
+
+int main(){
+    
+    int a,b,c;
+    int largest,second_largest,third_largest;
+    
+    printf("enter three numbers\n");
+    scanf("%d%d%d",&a,&b,&c);
+    
+    if(a>b)
+     {if(a>c)
+       {largest=a;
+           if(b>c)
+           {second_largest=b;
+               third_largest=c;}
+           else
+           {second_largest=c;
+               third_largest=b;}}
+        
+       else
+           {largest=c;
+         second_largest=a;
+               third_largest=b;}
+            
+           }
+     else
+      {
+         if(b>c)
+          {largest=a;
+             if(a>c)
+             {second_largest=a;
+                 third_largest=c;}
+             else
+             {second_largest=c;
+                 third_largest=a;}}
+          else
+          {largest=c;
+           second_largest=b;
+          third_largest=a;
+          }
+      }
+    printf("The number in the decending order are as follows:%d\t%d\t%d\n",largest,second_largest,third_largest);
+    
+        return 0;}
