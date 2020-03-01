@@ -1,0 +1,51 @@
+//
+//
+//
+//  A2P2.c
+//  3
+//  WAP to accept principal and time user and the rate of interest, calculate the final amount using compound interest formula.
+//  Created by JASHANPREET SINGH on 27/02/20.
+//  Copyright © 2020 JASHANPREET SINGH. All rights reserved.
+//
+
+#include <stdio.h>
+#include <math.h>
+int main(){
+    
+    int prin, time;
+    
+    float ROI,CI;
+    
+    printf("Enter the principle amount and time\n");
+    
+    scanf("%d%d", &prin, &time);
+    
+    if(prin<2000 && time>=2)
+    {
+        ROI= 5;
+    }
+    else if (prin>2000 && prin<6000 && time>=2)
+    {
+        ROI=7;
+    }
+    else if(prin>6000 && time>=1)
+    {
+        ROI=8;
+    }
+    
+   else if (time>=10)
+   {
+       ROI=10;
+   }
+   else{
+       
+       ROI=3;
+   }
+ 
+    CI= prin*(pow(1+ROI/100,time));
+    printf ("The rate of interest is %f\n", ROI);
+    printf("The compound interest is %f\n", CI);
+    
+    return 0;
+    
+}
