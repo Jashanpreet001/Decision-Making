@@ -1,0 +1,37 @@
+//
+//  main.c
+//  C++ Programming at VMM.
+// WAP to accept sales from the user and calculate the commision accordingly.
+//  Created by JASHANPREET SINGH on 29/02/20.
+//  Copyright © 2020 JASHANPREET SINGH. All rights reserved.
+//
+
+#include <stdio.h>
+
+
+int main(){
+    
+    int sales, commision;
+    
+    printf("enter the total sales\n");
+    scanf("%d",&sales);
+    
+    commision=0;
+    
+    { if(sales>=30001)
+        commision=15;
+    else if(sales>=22001 && sales<=30000)
+        commision=10;
+    else if(sales>=12001 && sales<=22000)
+        commision=7;
+    else if(sales>=5001 && sales<=12001)
+        commision=5;
+    else if(sales>=0 && sales<=5000)
+        commision=0;
+    else
+        printf("You have entered an invalid input");
+    }
+    printf("The commision is %d percent\n", commision);
+    
+    return0;
+}
